@@ -1,0 +1,8 @@
+{
+  "realm": "Demo",
+  "realm-public-key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvG7rQXsf53D12NAiHg18jQd+xPB7FvTkMkpki7yrsyS2J9QzEKltNmGJ/MxmJMXNDI0hh2V+5E88LJ/syrkeCZdfJoEhhDZ8u7cTqZwZ5yekyFp7ropifaaBuNvM1igoy8KKx380dY2ELmAbOyKeMAG8P5ewWi6QlaRzL2vZ0qxgIZ5C2NUKtWgyEO97J0mlJ5C9TXuQR28H8YNK6WCW5Kfg6odSVwmwRL1i+EAdEbFlEYHU1eeZyOP3BoBfrO81mk97CKprboyxvuQiLTbJQ42yHi6HtPg0/+xES7LwMW3ZBN22XMA1O/2de8tLbx9dvlOn+winResPUusgs6C+8QIDAQAB",
+  "auth-server-url": "https://keycloak-jimwuzhere.rhcloud.com/auth",
+  "ssl-required": "external",
+  "resource": "cordovaKeycloakDemo",
+  "public-client": true
+}

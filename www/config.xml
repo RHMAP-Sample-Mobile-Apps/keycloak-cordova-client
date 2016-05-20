@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.feedhenry.apps.cordovaClientKeycloak" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>cordovaClientKeycloak</name>
+    <description>
+        This is an advanced hybrid app, built using Cordova
+    </description>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="fullscreen" value="true" />
+    <preference name="webviewbounce" value="true" />
+    <plugin name="cordova-plugin-whitelist" spec="1.2.0" />
+</widget>

@@ -9,7 +9,6 @@ function onDeviceReady() {
   .success(function() {
     if(keycloakAuth.authenticated) {
       auth = keycloakAuth;
-      alert('authenticated: ' + JSON.stringify(auth, null, 4));
     }
     else {
       alert('Not authenticated');

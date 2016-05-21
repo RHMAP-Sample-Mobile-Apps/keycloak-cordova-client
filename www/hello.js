@@ -7,25 +7,32 @@ function onDeviceReady() {
     onLoad: 'login-required'
   })
   .success(function() {
-    auth = keycloakAuth;
+    if(keycloakAuth.authenticated) {
+      auth = keycloakAuth;
+      alert('authenticated: ' + JSON.stringify(auth, null, 4));
+    }
+    else {
+      alert('Not authenticated');
+    }
   })
   .error(function() {
-      //document.location.reload();
+    alert('Error in auth init');
   });
 }
 
 document.getElementById('say_hello').onclick = function () {
-  document.getElementById('cloudResponse').innerHTML = "<p>Calling Cloud.....</p>";
+  document.getElementById('cloudResponse').innerHTML = '<p>Calling Cloud.....</p>';
   $fh.cloud(
       {
         path: 'keycloak-demo/needs-authentication',
-        data: {},
+        method: 'GET',
         headers: {
           'Authorization': 'Bearer ' + auth.token
-        }
+        },
+        timeout: 25000
       },
       function (res) {
-        document.getElementById('cloudResponse').innerHTML = "<p>" + res.msg + "</p>";
+        document.getElementById('cloudResponse').innerHTML = '<p>' + res.msg + '</p>';
       },
       function (code, errorprops, params) {
         alert('An error occured: ' + code + ' : ' + errorprops);

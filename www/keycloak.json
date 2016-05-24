@@ -4,5 +4,6 @@
   "auth-server-url": "https://keycloak-jimwuzhere.rhcloud.com/auth",
   "ssl-required": "external",
   "resource": "cordovaKeycloakDemo",
-  "public-client": true
+  "public-client": true,
+  "use-resource-role-mappings": true
 }

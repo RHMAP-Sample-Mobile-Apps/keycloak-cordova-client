@@ -1,5 +1,6 @@
+'use strict';
 var auth;
-var keycloakAuth;
+var keycloakAuth = new Keycloak('keycloak.json');
 
 document.addEventListener('deviceready', onDeviceReady, false);
 
@@ -34,13 +35,13 @@ function callCloud(route) {
 }
 
 function onDeviceReady() {
-  keycloakAuth = new Keycloak('keycloak.json');
   keycloakAuth.init({
     onLoad: 'login-required'
   })
   .success(function() {
     if(keycloakAuth.authenticated) {
       auth = keycloakAuth;
+      alert('Token:' + JSON.stringify(auth, null, 4));
     }
     else {
       alert('Not authenticated');
@@ -69,4 +70,9 @@ document.getElementById('supervisorRole').onclick = function () {
 
 document.getElementById('adminRole').onclick = function () {
   callCloud('needs-admin-role');
+};
+
+document.getElementById('logout').onclick = function () {
+  keycloakAuth.logout({redirectUri: '/'});
+  document.window.location.reload();
 };

@@ -1,58 +1,42 @@
-@font-face {
-    font-family: OS-Regular;
-    src: url('fonts/OpenSans-Regular.ttf');
-}
-@font-face {
-    font-family: OS-Light;
-    src: url('fonts/OpenSans-Light.ttf');
-}
-@font-face {
-    font-family: OS-Bold;
-    src: url('fonts/OpenSans-Bold.ttf');
-}
+@font-face { src: url("Webfonts/Overpass-Bold.eot"); font-family: 'Overpass'; /* IE9 Compat Modes */ src: url("Webfonts/Overpass-Bold.eot?#iefix") format("embedded-opentype"), url("Webfonts/Overpass-Bold.woff") format("woff"), url("Webfonts/Overpass-Bold.ttf") format("truetype"), url("Webfonts/Overpass-Bold.svg#Overpass-Bold") format("svg"); /* Legacy iOS */ font-style: normal; font-weight: 700; text-rendering: optimizeLegibility; ; }
+@font-face { src: url("Webfonts/Overpass-Bold-Italic.eot"); font-family: 'Overpass'; /* IE9 Compat Modes */ src: url("Webfonts/Overpass-Bold-Italic.eot?#iefix") format("embedded-opentype"), url("Webfonts/Overpass-Bold-Italic.woff") format("woff"), url("Webfonts/Overpass-Bold-Italic.ttf") format("truetype"), url("Webfonts/Overpass-Bold-Italic.svg#Overpass-BoldItalic") format("svg"); /* Legacy iOS */ font-style: italic; font-weight: 700; text-rendering: optimizeLegibility; ; }
+@font-face { src: url("Webfonts/Overpass-Regular.eot"); font-family: 'Overpass'; /* IE9 Compat Modes */ src: url("Webfonts/Overpass-Regular.eot?#iefix") format("embedded-opentype"), url("Webfonts/Overpass-Regular.woff") format("woff"), url("Webfonts/Overpass-Regular.ttf") format("truetype"), url("Webfonts/Overpass-Regular.svg#Overpass-Regular") format("svg"); /* Legacy iOS */ font-style: normal; font-weight: 600; text-rendering: optimizeLegibility; ; }
+@font-face { src: url("Webfonts/Overpass-Italic.eot"); font-family: 'Overpass'; /* IE9 Compat Modes */ src: url("Webfonts/Overpass-Italic.eot?#iefix") format("embedded-opentype"), url("Webfonts/Overpass-Italic.woff") format("woff"), url("Webfonts/Overpass-Italic.ttf") format("truetype"), url("Webfonts/Overpass-Italic.svg#Overpass-Italic") format("svg"); /* Legacy iOS */ font-style: italic; font-weight: 600; text-rendering: optimizeLegibility; ; }
+@font-face { src: url("Webfonts/Overpass-Light.eot"); font-family: 'Overpass'; /* IE9 Compat Modes */ src: url("Webfonts/Overpass-Light.eot?#iefix") format("embedded-opentype"), url("Webfonts/Overpass-Light.woff") format("woff"), url("Webfonts/Overpass-Light.ttf") format("truetype"), url("Webfonts/Overpass-Light.svg#Overpass-Light") format("svg"); /* Legacy iOS */ font-style: normal; font-weight: 400; text-rendering: optimizeLegibility; ; }
+@font-face { src: url("Webfonts/Overpass-LightItalic.eot"); font-family: 'Overpass'; /* IE9 Compat Modes */ src: url("Webfonts/Overpass-LightItalic.eot?#iefix") format("embedded-opentype"), url("Webfonts/Overpass-LightItalic.woff") format("woff"), url("Webfonts/Overpass-LightItalic.ttf") format("truetype"), url("Webfonts/Overpass-LightItalic.svg#Overpass-LightItalic") format("svg"); /* Legacy iOS */ font-style: italic; font-weight: 400; text-rendering: optimizeLegibility; ; }
+@font-face { src: url("Webfonts/Overpass-ExtraLight.eot"); font-family: 'Overpass'; /* IE9 Compat Modes */ src: url("Webfonts/Overpass-ExtraLight.eot?#iefix") format("embedded-opentype"), url("Webfonts/Overpass-ExtraLight.woff") format("woff"), url("Webfonts/Overpass-ExtraLight.ttf") format("truetype"), url("Webfonts/Overpass-ExtraLight.svg#Overpass-ExtraLight") format("svg"); /* Legacy iOS */ font-style: normal; font-weight: 200; text-rendering: optimizeLegibility; ; }
+@font-face { src: url("Webfonts/Overpass-ExtraLight-Italic.eot"); font-family: 'Overpass'; /* IE9 Compat Modes */ src: url("Webfonts/Overpass-ExtraLight-Italic.eot?#iefix") format("embedded-opentype"), url("Webfonts/Overpass-ExtraLight-Italic.woff") format("woff"), url("Webfonts/Overpass-ExtraLight-Italic.ttf") format("truetype"), url("Webfonts/Overpass-ExtraLight-Italic.svg#Overpass-ExtraLightItalic") format("svg"); /* Legacy iOS */ font-style: italic; font-weight: 200; text-rendering: optimizeLegibility; ; }
 
 body {
-    font-size: 12px;
-    font-family: OS-Light;
+    font-size: 1em;
+    font-family: Overpass;
+    color: #000000;
+    background-color: #DCDCDC;
 }
 #app {
     width: inherit;
     height: inherit;
 }
 #count {
-    margin-top:50px;
+    position: relative;
+    margin-top: 10px;
 }
-header {
-    position: absolute;
-    top:0;
-    left: 0;
+.header-footer-bg {
+    position: relative;
+    height: 60px;
     width: 100%;
+    background-color: #CC0000;
 }
 .center > h3 {
-    color: #ffffff;
+    color: #FFFFFF;
     letter-spacing: 2px;
-    font-family: OS-Light;
+    font-family: Overpass;
     font-size: 1.5em;
 }
 .center > h3 > small {
-    color: #ffffff;
+    color: #FFFFFF;
     letter-spacing: 2px;
-    font-family: OS-Light;
-}
-.header-footer-bg {
-    background-color: #7ea1b6;
-}
-footer {
-    position: absolute;
-    bottom:0;
-    left: 0;
-    width: 100%;
-    height: 5%;
-    color: #ffffff;
-}
-footer > div > small {
-    padding-top: 8px;
-    padding-right: 10px;
+    font-family: Overpass;
 }
 .left {
     float: left;
@@ -73,31 +57,43 @@ footer > div > small {
  */
 
 #description {
-    text-align: justify;
+    text-align: center;
     position: relative;
-    padding-top: 40px;
     font-size: 1.5em;
 }
 .input-group {
     display: block;
 }
 
+.cloudResponseContainer {
+  position: relative;
+  display: block;
+  height: 60px;
+  width: 100%;
+}
 .cloudResponse {
-    font-size: 2em;
-
+    font-size: 1.5em;
     font-weight: bold;
     text-align: center;
+    color: #CC0000;
 }
 
-.say-hello-button {
-    width: 100%;
+.button {
+    width: 50%;
+    height: 2.5em;
 
-    margin: 5px 0px 5px 0px;
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     padding: 5px 5px 5px 5px;
     font-size: 1.6em;
-    background-color: #4a87ee;
+    background-color: #4C4C4C;
     border: 1px solid #216CEC;
     color: #fff;
+}
+.logout-button {
+  background-color:#820000;
 }
 
 .input-text{

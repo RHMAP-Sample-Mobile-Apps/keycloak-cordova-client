@@ -82,7 +82,8 @@ document.getElementById('adminRole').onclick = function () {
 };
 
 document.getElementById('logout').onclick = function () {
-  keycloakAuth.logout({redirectUri: '/index.html'});
+  keycloakAuth.logout();
+  onDeviceReady();
   //document.window.location.reload();
   //onDeviceReady();
 };

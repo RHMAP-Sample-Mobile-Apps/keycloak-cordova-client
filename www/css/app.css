@@ -13,6 +13,9 @@ body {
     color: #000000;
     background-color: #DCDCDC;
 }
+h3  {
+    padding-top: 15px;
+}
 #app {
     width: inherit;
     height: inherit;
@@ -72,16 +75,17 @@ body {
   width: 100%;
 }
 .cloudResponse {
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: bold;
     text-align: center;
     color: #CC0000;
+    padding-top: 5px;
 }
 
 .button {
-    width: 50%;
-    height: 2.5em;
-
+    width: 80%;
+    height: 2.25em;
+    border-radius: 10px;
     float: none;
     display: block;
     margin-left: auto;

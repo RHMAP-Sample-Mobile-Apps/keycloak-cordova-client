@@ -93,8 +93,8 @@ h3  {
     padding: 5px 5px 5px 5px;
     font-size: 1.6em;
     background-color: #4C4C4C;
-    border: 1px solid #216CEC;
-    color: #fff;
+    border: 1px solid #000000;
+    color: #FFFFFF;
 }
 .logout-button {
   background-color:#820000;
